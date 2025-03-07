@@ -1,0 +1,81 @@
+@font-face{
+    font-family: glitch;
+    src:url(./sdglitchdemo/SDGlitch_Demo.ttf);
+}
+@font-face{
+    font-family: byte;
+    src:url(./bytebounce/ByteBounce.ttf);
+}
+@font-face{
+    font-family: religath;
+    src:url(./religath/RELIGATH-Demo.otf);
+}
+@font-face{
+    font-family:alphacorsa;
+    src:url(./alphacorsa/Alphacorsa\ Personal\ Use.ttf)
+}
+body{
+    background-image: url("abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9530.png");
+    background-size: cover;
+}
+.intro{
+    width:100%;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+.intro-grid{
+    width: 80%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap:20px;
+}
+.main_intro{
+    box-shadow: 5px 5px 30px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    grid-column: span 2;
+}
+.name{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.main_name{
+    color: #ffcc00;
+    animation: fadeInUp 10s ease-out forwards;
+    font-family: glitch;
+    letter-spacing: 7px;
+}
+.description{
+    animation: fadeInUp 5s ease-out forwards;
+}
+.tech{
+    border:1px solid white;
+    border-radius: 10px;
+}
+.interests{
+    border:1px solid white;
+    border-radius: 10px;
+}
+@keyframes fadeInUp{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
